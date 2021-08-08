@@ -1,6 +1,6 @@
 <?php
 
-namespace HippoBaguette\ChatFilter;
+namespace HippoBaguette\ChatFilterX;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;

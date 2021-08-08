@@ -1,7 +1,7 @@
-name: ChatFilter
+name: ChatFilterX
 version: 1.0.0
 api: 3.0.0
-main: HippoBaguette\ChatFilter\Main
+main: HippoBaguette\ChatFilterX\Main
 author: HippoBaguette
 
 permissions:
