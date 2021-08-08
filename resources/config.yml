@@ -1,0 +1,44 @@
+# ChatFilter v1.0.0
+
+# What words to filter?
+
+# Words to filter
+# Below is the default. Feel free to change the words, add more, or get rid of some.
+filter-words:
+  - arse
+  - ass
+  - asshole
+  - bitch
+  - bich
+  - cunt
+  - cum
+  - dick
+  - dickhead
+  - eshay
+  - fuck
+  - frick
+  - motherfucker
+  - motherfricker
+  - mother fucker
+  - mother fricker
+  - son of a bitch
+  - fucking
+  - fricking
+  - sex
+  - seggs
+
+
+# What to do when a message gets flagged
+
+# send - Send the message? (with the flagged words) (HippoBaguette is bad -> HippoBaguette is bad)
+# filter - Send the message without the flagged words (HippoBaguette is bad -> is bad)
+# censor - Send the message with the flagged words but censored  (HippoBaguette is bad -> ************ is bad)
+# block - Don't send the message.
+flagged-words: block
+
+# If there was a flagged word, do you want a message sent to the user? (true or false)
+message-toggle: true
+
+# What is the message? (only if true for message-toggle)
+# This will only send if flagged-words is not send
+message: You can't say that word!
