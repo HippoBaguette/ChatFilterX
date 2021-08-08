@@ -1,4 +1,4 @@
-# ChatFilter
+# ChatFilterX
 Chat filter plugin for PocketMine-MP
 
 **Permissions**
