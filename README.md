@@ -1,6 +1,8 @@
 # ChatFilterX
 Chat filter plugin for PocketMine-MP
 
+[![](https://poggit.pmmp.io/shield.state/ChatFilterX)](https://poggit.pmmp.io/p/ChatFilterX)
+
 **Permissions**
 Permission | Description
 ------------ | -------------
