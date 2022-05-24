@@ -44,7 +44,7 @@ class Main extends PluginBase implements Listener
             $message = $event->getMessage();
             $event->setMessage(str_ireplace($this->config->get("filter-words"), "", $event->getMessage()));
             if ($this->config->get("message-toggle") === true && $event->getMessage() != $message) {
-                $event->getPlayer()->sendMessage(TextFormat::RED . $this->config->get("message"));
+                $event->getPlayer()->sendMessage(TextFormat::RED . $this->config->get("message")); 
                 $chatFlagEvent = new ChatFlaggedEvent($event->getPlayer(), $event->getMessage());
                 $chatFlagEvent->call();
             }
@@ -55,9 +55,10 @@ class Main extends PluginBase implements Listener
                     $event->setCancelled();
                     if ($this->config->get("message-toggle") === true) {
                         $event->getPlayer()->sendMessage(TextFormat::RED . $this->config->get("message"));
-                        $chatFlagEvent = new ChatFlaggedEvent($event->getPlayer(), $event->getMessage());
-                        $chatFlagEvent->call();
                     }
+                    $chatFlagEvent = new ChatFlaggedEvent($event->getPlayer(), $event->getMessage());
+                    $chatFlagEvent->call();
+                    return;
                 }
             }
         }
